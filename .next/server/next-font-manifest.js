@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/arfidanuhapinata/Documents/arfidakaii-projectt/maintenance-agent/src/app/layout\":[\"static/media/22a5144ee8d83bca-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
