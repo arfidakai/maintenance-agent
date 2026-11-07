@@ -1,10 +1,11 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
+import type Anthropic from "@anthropic-ai/sdk";
 
 type ToolInput = Record<string, unknown>;
 
 type ToolName = "list_sites" | "check_site" | "create_task";
 
-export const tools = [
+export const tools: Anthropic.Tool[] = [
   {
     name: "list_sites",
     description: "List all monitored sites.",
@@ -46,7 +47,7 @@ export const tools = [
       required: ["site_id", "title"],
     },
   },
-] as const;
+];
 
 export async function runTool(name: string, input: ToolInput, supabase: SupabaseClient) {
   switch (name as ToolName) {
